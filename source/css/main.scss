@@ -386,6 +386,10 @@ body {
 		font-size: 18px;
 		line-height: 21px;
 
+		@media (max-width: 960px) {
+			margin-right: 28px;
+		}
+
 		@media (max-width: 675px) {
 			display: none;
 		}
@@ -400,10 +404,15 @@ body {
 			cursor: pointer;
 			background-color: transparent;
  			font-family: 'Raleway-Medium', Helvetica, sans-serif;
-			font-size: 16px;
-			line-height: 19px;
+			font-size: 20px;
+			line-height: 23px;
 			padding: 0;
 			color: #9B9B99;
+
+			@media (max-width: 675px) {
+				font-size: 16px;
+				line-height: 19px;
+			}
 		}
 		&-eng {
 			border: none;
@@ -412,15 +421,24 @@ body {
 			cursor: pointer;
 			background-color: transparent;
  			font-family: 'Raleway-Medium', Helvetica, sans-serif;
-			font-size: 16px;
-			line-height: 19px;
+			font-size: 20px;
+			line-height: 23px;
 			margin-left: 8px;
 			padding: 0;
 			color: #9B9B99;
+
+			@media (max-width: 675px) {
+				font-size: 16px;
+				line-height: 19px;
+			}
 		}
 
-		@media (max-width: 675px) {
+		@media (max-width: 960px) {
 			display: flex;
+		}
+
+		@media (max-width: 359px) {
+			display: none;
 		}
 
 	}
@@ -431,15 +449,20 @@ body {
 		appearance: none;
 		cursor: pointer;
 		background-color: transparent;
-		width: 17px;
-		height: 12px;
+		width: 23px;
+		height: 17px;
 		background-image: url('../images/burg.png');
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
 
-		@media (max-width: 675px) {
+		@media (max-width: 960px) {
 			display: block;
+		}
+
+		@media (max-width: 675px) {
+			font-size: 17px;
+			line-height: 12px;
 		}
 
 	}
@@ -658,7 +681,7 @@ body {
 		width: 100%;
 
 		&:last-child {
-			@media (max-width: 960px) {
+			@media (max-width: 1169px) {
 				margin-left: 40px;
 			}
 
@@ -675,15 +698,7 @@ body {
 		margin-bottom: 20px;
 
 		@media (max-width: 1169px) {
-			max-width: 80%;
-		}
-
-		@media (max-width: 960px) {
-			max-width: 95%;
-		}
-
-		@media (max-width: 675px) {
-			max-width: 97%;
+			max-width: 100%;
 		}
 
 	}
@@ -700,6 +715,7 @@ body {
 		appearance: none;
 		background-color: #FFF8E0;
 		padding: 16px 8px;
+		box-sizing: border-box;
 		width: 100%;
 		border-radius: 6px;
 		font-family: 'Raleway-Medium', Helvetica, sans-serif;
@@ -731,12 +747,9 @@ body {
 		border-radius: 12px;
 
 		@media (max-width: 1169px) {
-			max-width: 82%;
-		}
-
-		@media (max-width: 960px) {
 			max-width: 100%;
 		}
+
 	}
 	&__flower {
 		position: absolute;
@@ -902,11 +915,26 @@ body {
 		}
 	}
 
+	&__copyright {
+		display: none;
+		margin-top: 32px;
+		font-family: 'Raleway-Regular', Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 14px;
+		color: #B9B3B3;
+
+		a {
+			font-family: 'Raleway-Regular', Helvetica, sans-serif;
+			color: #B9B3B3;
+			text-decoration: none;
+		}
+
+		@media (max-width: 960px) {
+			display: block;
+		}
+	}
+
 	@media (max-width: 960px) {
 		padding: 32px 0;
 	}
-}
-
-@media (max-width: 675px) {
-
 }
